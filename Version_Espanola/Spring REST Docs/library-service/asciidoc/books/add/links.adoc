@@ -1,0 +1,34 @@
+|===
+|Relation|Description
+
+|`+self+`
+|Link to self(add the book) resource.
+
+|`+getById+`
+|Link to get the book resource by id.
+
+|`+getPageOfBooks+`
+|Link to get the page of the books resource.
+
+|`+getPageOfSortedBooks+`
+|Link to get the page of sorted books resource.
+
+|`+update+`
+|Link to update the book resource.
+
+|`+deleteById+`
+|Link to delete the book resource by id.
+
+|`+addComment+`
+|Link to add comment to the book resource.
+
+|`+getPageOfCommentsByBookId+`
+|Link to get page of comments of the book resource.
+
+|`+getPageOfSortedCommentsByBookId+`
+|Link to get page of sorted comments of the book resource.
+
+|`+deleteAllCommentsByBookId+`
+|Link to delete all comments of the book resource.
+
+|===

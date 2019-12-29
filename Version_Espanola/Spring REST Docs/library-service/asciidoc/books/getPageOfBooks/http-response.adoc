@@ -1,0 +1,222 @@
+[source,http,options="nowrap"]
+----
+HTTP/1.1 200 OK
+Content-Type: application/hal+json;charset=UTF-8
+Content-Length: 5331
+
+{
+  "content" : [ {
+    "bookId" : 1,
+    "name" : "BBBBBBBBB",
+    "genres" : [ {
+      "id" : 1,
+      "name" : "Genre Book Uno"
+    }, {
+      "id" : 2,
+      "name" : "Genre Book Dos"
+    } ],
+    "publishingHouse" : {
+      "id" : 1,
+      "name" : "Publication House",
+      "address" : {
+        "id" : 1,
+        "country" : "Spain",
+        "city" : "Madrid",
+        "street" : "Calle Uno",
+        "houseNumber" : "1A",
+        "postcode" : 1111
+      },
+      "phoneNumbers" : [ {
+        "id" : 1,
+        "phoneNumber" : "0111111111111111",
+        "countryCode" : "11111",
+        "type" : "Office"
+      }, {
+        "id" : 2,
+        "phoneNumber" : "02222222222222",
+        "countryCode" : "222222",
+        "type" : "Fax"
+      } ],
+      "emails" : [ {
+        "id" : 1,
+        "email" : "email_1_publicationHouse9@email.com",
+        "emailType" : "Office"
+      }, {
+        "id" : 2,
+        "email" : "email_2_publicationHouse9@email.com",
+        "emailType" : "Office 2"
+      } ]
+    },
+    "publicationDate" : "30.10.2019",
+    "pathFile" : "path/path/book",
+    "comments" : [ {
+      "commentId" : 1,
+      "userId" : 1,
+      "text" : "Text Comment",
+      "date" : "02.11.2019",
+      "subComments" : [ {
+        "subCommentId" : 1,
+        "userId" : 1,
+        "text" : "test sub comment",
+        "date" : "02.11.2019",
+        "links" : [ ]
+      } ],
+      "links" : [ ]
+    } ],
+    "authors" : [ {
+      "id" : 1,
+      "firstName" : "Author_1 FirstName",
+      "lastName" : "Author_1 LastName",
+      "emails" : [ {
+        "id" : 1,
+        "email" : "email_1.author_19@email.com",
+        "emailType" : "Personal"
+      }, {
+        "id" : 2,
+        "email" : "email_2.author_19@email.com",
+        "emailType" : "Personal"
+      } ],
+      "phoneNumbers" : [ {
+        "id" : 1,
+        "phoneNumber" : "01111111111111",
+        "countryCode" : "111",
+        "type" : "Personal"
+      }, {
+        "id" : 2,
+        "phoneNumber" : "0222222222222222",
+        "countryCode" : "222",
+        "type" : "Work"
+      } ],
+      "addresses" : [ {
+        "id" : 1,
+        "country" : "Spain",
+        "city" : "Madrid",
+        "street" : "Calle Uno",
+        "houseNumber" : "1A",
+        "postcode" : 111111
+      }, {
+        "id" : 2,
+        "country" : "Spain",
+        "city" : "Barcelona",
+        "street" : "Calle Dos",
+        "houseNumber" : "2A",
+        "postcode" : 222222
+      } ],
+      "birthday" : "30.10.2019",
+      "genres" : [ {
+        "id" : 1,
+        "name" : "Genre Uno"
+      }, {
+        "id" : 2,
+        "name" : "Genre Dos"
+      } ]
+    } ],
+    "links" : [ {
+      "rel" : "self",
+      "href" : "http://localhost:8080/books/{startPage}/{pageSize}",
+      "hreflang" : null,
+      "media" : null,
+      "title" : null,
+      "type" : null,
+      "deprecation" : null
+    }, {
+      "rel" : "add",
+      "href" : "http://localhost:8080/books",
+      "hreflang" : null,
+      "media" : null,
+      "title" : null,
+      "type" : null,
+      "deprecation" : null
+    }, {
+      "rel" : "getById",
+      "href" : "http://localhost:8080/books/1",
+      "hreflang" : null,
+      "media" : null,
+      "title" : null,
+      "type" : null,
+      "deprecation" : null
+    }, {
+      "rel" : "getPageOfSortedBooks",
+      "href" : "http://localhost:8080/books/{startPage}/{pageSize}/{sortOrder}",
+      "hreflang" : null,
+      "media" : null,
+      "title" : null,
+      "type" : null,
+      "deprecation" : null
+    }, {
+      "rel" : "update",
+      "href" : "http://localhost:8080/books/1",
+      "hreflang" : null,
+      "media" : null,
+      "title" : null,
+      "type" : null,
+      "deprecation" : null
+    }, {
+      "rel" : "deleteById",
+      "href" : "http://localhost:8080/books/1",
+      "hreflang" : null,
+      "media" : null,
+      "title" : null,
+      "type" : null,
+      "deprecation" : null
+    }, {
+      "rel" : "addComment",
+      "href" : "http://localhost:8080/books/{bookId}/comments",
+      "hreflang" : null,
+      "media" : null,
+      "title" : null,
+      "type" : null,
+      "deprecation" : null
+    }, {
+      "rel" : "getPageOfCommentsByBookId",
+      "href" : "http://localhost:8080/books/{bookId}/comments/{startPage}/{pageSize}",
+      "hreflang" : null,
+      "media" : null,
+      "title" : null,
+      "type" : null,
+      "deprecation" : null
+    }, {
+      "rel" : "getPageOfSortedCommentsByBookId",
+      "href" : "http://localhost:8080/books/{bookId}/comments/{startPage}/{pageSize}/{sortOrder}",
+      "hreflang" : null,
+      "media" : null,
+      "title" : null,
+      "type" : null,
+      "deprecation" : null
+    }, {
+      "rel" : "deleteAllCommentsByBookId",
+      "href" : "http://localhost:8080/books/{bookId}/comments",
+      "hreflang" : null,
+      "media" : null,
+      "title" : null,
+      "type" : null,
+      "deprecation" : null
+    } ]
+  } ],
+  "pageable" : {
+    "sort" : {
+      "sorted" : false,
+      "unsorted" : true,
+      "empty" : true
+    },
+    "offset" : 0,
+    "pageSize" : 1,
+    "pageNumber" : 0,
+    "paged" : true,
+    "unpaged" : false
+  },
+  "totalPages" : 2,
+  "totalElements" : 2,
+  "last" : false,
+  "number" : 0,
+  "sort" : {
+    "sorted" : false,
+    "unsorted" : true,
+    "empty" : true
+  },
+  "size" : 1,
+  "first" : true,
+  "numberOfElements" : 1,
+  "empty" : false
+}
+----

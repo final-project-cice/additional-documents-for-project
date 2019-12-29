@@ -1,0 +1,850 @@
+= Books REST API Documentation Guide.
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 4
+:sectlinks:
+:author: Tsyupryk Roman
+:email: tsyupryk.roman@gmail.com
+:revdate: 15.11.2019
+
+[[introduction]]
+= Introduction
+
+Its documentation of CRUD API "book-service".
+
+[[overview-http-verbs]]
+= HTTP verbs
+
+Example Books defines HTTP verbs for all endpoints as follows:
+
+|===
+| Verb | Usage
+
+| `GET`
+| Used to retrieve a resource
+
+| `POST`
+| Used to create a new resource
+
+| `PUT`
+| Used to update an existing resource, see endpoint for specifics
+
+| `PATCH`
+| Currently not supported
+
+| `DELETE`
+| Used to delete a resource
+|===
+
+= Book
+
+=== Get Book By Id.
+Obtains a specific Book by its unique identifier.
+
+====== CURL Request
+
+include::books/getById/curl-request.adoc[]
+
+====== Path Parameters
+
+include::books/getById/path-parameters.adoc[]
+
+====== HTTP Request
+
+include::books/getById/http-request.adoc[]
+
+====== HTTPie Requests
+
+include::books/getById/httpie-request.adoc[]
+
+====== Request Body
+
+include::books/getById/request-body.adoc[]
+
+====== Links
+
+include::books/getById/links.adoc[]
+
+====== HTTP Response
+
+include::books/getById/http-response.adoc[]
+
+====== Response Body
+
+include::books/getById/response-body.adoc[]
+
+====== Response Fields
+
+include::books/getById/response-fields.adoc[]
+
+=== Get Page Of Books.
+
+Obtains page of Books.
+
+====== CURL Request
+
+include::books/getPageOfBooks/curl-request.adoc[]
+
+====== Path Parameters
+
+include::books/getPageOfBooks/path-parameters.adoc[]
+
+====== HTTP Request
+
+include::books/getPageOfBooks/http-request.adoc[]
+
+====== HTTPie Requests
+
+include::books/getPageOfBooks/httpie-request.adoc[]
+
+====== Request Body
+
+include::books/getPageOfBooks/request-body.adoc[]
+
+====== Links
+
+include::books/getPageOfBooks/links.adoc[]
+
+====== HTTP Response
+
+include::books/getPageOfBooks/http-response.adoc[]
+
+====== Response Body
+
+include::books/getPageOfBooks/response-body.adoc[]
+
+====== Response Fields
+
+include::books/getPageOfBooks/response-fields.adoc[]
+
+=== Get Page Of Sorted Books.
+
+Obtains a page of sorted books.
+
+====== CURL Request
+
+include::books/getPageOfSortedBooks/curl-request.adoc[]
+
+====== Path Parameters
+
+include::books/getPageOfSortedBooks/path-parameters.adoc[]
+
+====== HTTP Request
+
+include::books/getPageOfSortedBooks/http-request.adoc[]
+
+====== HTTPie Requests
+
+include::books/getPageOfSortedBooks/httpie-request.adoc[]
+
+====== Request Body
+
+include::books/getPageOfSortedBooks/request-body.adoc[]
+
+====== Links
+
+include::books/getPageOfSortedBooks/links.adoc[]
+
+====== HTTP Response
+
+include::books/getPageOfSortedBooks/http-response.adoc[]
+
+====== Response Body
+
+include::books/getPageOfSortedBooks/response-body.adoc[]
+
+====== Response Fields
+
+include::books/getPageOfSortedBooks/response-fields.adoc[]
+
+=== Create Book.
+Create Book by this body request.
+
+====== CURL Request
+include::books/add/curl-request.adoc[]
+
+====== HTTP Request
+include::books/add/http-request.adoc[]
+
+====== HTTPie Requests
+include::books/add/httpie-request.adoc[]
+
+====== Request Body
+include::books/add/request-body.adoc[]
+
+====== Request Fields
+include::books/add/request-fields.adoc[]
+
+====== Links
+
+include::books/add/links.adoc[]
+
+====== HTTP Response
+
+include::books/add/http-response.adoc[]
+
+====== Response Body
+
+include::books/add/response-body.adoc[]
+
+====== Response Fields
+
+include::books/add/response-fields.adoc[]
+
+=== Update Book.
+
+Update Book by book id and this body request.
+
+====== CURL Request
+
+include::books/update/curl-request.adoc[]
+
+====== Path Parameter
+
+include::books/update/path-parameters.adoc[]
+
+====== HTTP Request
+
+include::books/update/http-request.adoc[]
+
+====== HTTPie Requests
+
+include::books/update/httpie-request.adoc[]
+
+====== Request Body
+
+include::books/update/request-body.adoc[]
+
+====== Request Fields
+
+include::books/update/request-fields.adoc[]
+
+====== Links
+
+include::books/update/links.adoc[]
+
+====== HTTP Response
+
+include::books/update/http-response.adoc[]
+
+====== Response Body
+
+include::books/update/response-body.adoc[]
+
+====== Response Fields
+
+include::books/update/response-fields.adoc[]
+
+=== Delete Book.
+
+Delete Book by ID.
+
+====== CURL Request
+
+include::books/deleteById/curl-request.adoc[]
+
+====== Path Parameters
+
+include::books/deleteById/path-parameters.adoc[]
+
+====== HTTP Request
+
+include::books/deleteById/http-request.adoc[]
+
+====== HTTPie Requests
+
+include::books/deleteById/httpie-request.adoc[]
+
+====== Request Body
+
+include::books/deleteById/request-body.adoc[]
+
+====== Links
+
+include::books/deleteById/links.adoc[]
+
+====== HTTP Response
+
+include::books/deleteById/http-response.adoc[]
+
+====== Response Body
+
+include::books/deleteById/response-body.adoc[]
+
+====== Response Fienlds
+
+include::books/deleteById/response-fields.adoc[]
+
+= Comments of the Book.
+
+=== Get Comment By Comment Id.
+
+Get Comment By Comment Id.
+
+====== CURL Request
+
+include::comments/getByCommentId/curl-request.adoc[]
+
+====== Path Parameters
+
+include::comments/getByCommentId/path-parameters.adoc[]
+
+====== HTTP Request
+
+include::comments/getByCommentId/http-request.adoc[]
+
+====== HTTPie Request
+
+include::comments/getByCommentId/httpie-request.adoc[]
+
+====== Request Body
+
+include::comments/getByCommentId/request-body.adoc[]
+
+====== Links
+
+include::comments/getByCommentId/links.adoc[]
+
+====== HTTP Response
+
+include::comments/getByCommentId/http-response.adoc[]
+
+====== Response Body
+
+include::comments/getByCommentId/response-body.adoc[]
+
+====== Response Fields
+
+include::comments/getByCommentId/response-fields.adoc[]
+
+=== Get Page Of Comments By Book Id.
+
+Get Page Of Comments By Book Id.
+
+====== CURL Request
+
+include::comments/getPageOfCommentsByBookId/curl-request.adoc[]
+
+====== Path Parameters
+
+include::comments/getPageOfCommentsByBookId/path-parameters.adoc[]
+
+====== HTTP Request
+
+include::comments/getPageOfCommentsByBookId/http-request.adoc[]
+
+====== HTTPie Request
+
+include::comments/getPageOfCommentsByBookId/httpie-request.adoc[]
+
+====== Request Body
+
+include::comments/getPageOfCommentsByBookId/request-body.adoc[]
+
+====== Links
+
+include::comments/getPageOfCommentsByBookId/links.adoc[]
+
+====== HTTP Response
+
+include::comments/getPageOfCommentsByBookId/http-response.adoc[]
+
+====== Response Body
+
+include::comments/getPageOfCommentsByBookId/response-body.adoc[]
+
+====== Response Fields
+
+include::comments/getPageOfCommentsByBookId/response-fields.adoc[]
+
+=== Get Page Of Sorted Comments By Book Id.
+
+Get Page Of Sorted Comments By Book Id.
+
+====== CURL Request
+
+include::comments/getPageOfSortedCommentsByBookId/curl-request.adoc[]
+
+====== Path Parameters
+
+include::comments/getPageOfSortedCommentsByBookId/path-parameters.adoc[]
+
+====== HTTP Request
+
+include::comments/getPageOfSortedCommentsByBookId/http-request.adoc[]
+
+====== HTTPie Request
+
+include::comments/getPageOfSortedCommentsByBookId/httpie-request.adoc[]
+
+====== Request Body
+
+include::comments/getPageOfSortedCommentsByBookId/request-body.adoc[]
+
+====== Links
+
+include::comments/getPageOfSortedCommentsByBookId/links.adoc[]
+
+====== HTTP Response
+
+include::comments/getPageOfSortedCommentsByBookId/http-response.adoc[]
+
+====== Response Body
+
+include::comments/getPageOfSortedCommentsByBookId/response-body.adoc[]
+
+====== Response Fields
+
+include::comments/getPageOfSortedCommentsByBookId/response-fields.adoc[]
+
+=== Create Comment.
+
+Create Comment by this body request.
+
+====== CURL Request
+
+include::comments/add/curl-request.adoc[]
+
+====== Path Parameter
+
+include::comments/add/path-parameters.adoc
+
+====== HTTP Request
+
+include::comments/add/http-request.adoc[]
+
+====== HTTPie Requests
+
+include::comments/add/httpie-request.adoc[]
+
+====== Request Body
+
+include::comments/add/request-body.adoc[]
+
+====== Request Fields
+
+include::comments/add/request-fields.adoc[]
+
+====== Links
+
+include::comments/add/links.adoc[]
+
+====== HTTP Response
+
+include::comments/add/http-response.adoc[]
+
+====== Response Body
+
+include::comments/add/response-body.adoc[]
+
+====== Response Fields
+
+include::comments/add/response-fields.adoc[]
+
+=== Update Comment.
+
+Update Comment by comment id and this body request.
+
+====== CURL Request
+
+include::comments/update/curl-request.adoc[]
+
+====== Path Parameter
+
+include::comments/update/path-parameters.adoc[]
+
+====== HTTP Request
+
+include::comments/update/http-request.adoc[]
+
+====== HTTPie Requests
+
+include::comments/update/httpie-request.adoc[]
+
+====== Request Body
+
+include::comments/update/request-body.adoc[]
+
+====== Request Fields
+
+include::comments/update/request-fields.adoc[]
+
+====== Links
+
+include::comments/update/links.adoc[]
+
+====== HTTP Response
+
+include::comments/update/http-response.adoc[]
+
+====== Response Body
+
+include::comments/update/response-body.adoc[]
+
+====== Response Fields
+
+include::comments/update/response-fields.adoc[]
+
+=== Delete Comment By Comment Id.
+
+Delete Comment By Comment Id.
+
+====== CURL Request
+
+include::comments/deleteByCommentId/curl-request.adoc[]
+
+====== Path Parameters
+
+include::comments/deleteByCommentId/path-parameters.adoc[]
+
+====== HTTP Request
+
+include::comments/deleteByCommentId/http-request.adoc[]
+
+====== HTTPie Request
+
+include::comments/deleteByCommentId/httpie-request.adoc[]
+
+====== Request Body
+
+include::comments/deleteByCommentId/request-body.adoc[]
+
+====== Links
+
+include::comments/deleteByCommentId/links.adoc[]
+
+====== HTTP Response
+
+include::comments/deleteByCommentId/http-response.adoc[]
+
+====== Response Body
+
+include::comments/deleteByCommentId/response-body.adoc[]
+
+====== Response Fields
+
+include::comments/deleteByCommentId/response-fields.adoc[]
+
+=== Delete All Comments By Book Id.
+
+Delete All Comments By Book Id.
+
+====== CURL Request
+
+include::comments/deleteAllCommentsByBookId/curl-request.adoc[]
+
+====== Path Parameters
+
+include::comments/deleteAllCommentsByBookId/path-parameters.adoc[]
+
+====== HTTP Request
+
+include::comments/deleteAllCommentsByBookId/http-request.adoc[]
+
+====== HTTPie Request
+
+include::comments/deleteAllCommentsByBookId/httpie-request.adoc[]
+
+====== Request Body
+
+include::comments/deleteAllCommentsByBookId/request-body.adoc[]
+
+====== HTTP Response
+
+include::comments/deleteAllCommentsByBookId/http-response.adoc[]
+
+====== Response Body
+
+include::comments/deleteAllCommentsByBookId/response-body.adoc[]
+
+====== Response Fields
+
+include::comments/deleteAllCommentsByBookId/response-fields.adoc[]
+
+= Sub Comments of the Comment.
+
+=== Get Sub Comment By Sub Comment Id.
+
+Get Sub Comment By Sub Comment Id.
+
+====== CURL Request
+
+include::subComments/getBySubCommentId/curl-request.adoc[]
+
+====== Path Parameters
+
+include::subComments/getBySubCommentId/path-parameters.adoc[]
+
+====== HTTP Request
+
+include::subComments/getBySubCommentId/http-request.adoc[]
+
+====== HTTPie Request
+
+include::subComments/getBySubCommentId/httpie-request.adoc[]
+
+====== Request Body
+
+include::subComments/getBySubCommentId/request-body.adoc[]
+
+====== Links
+
+include::subComments/getBySubCommentId/links.adoc[]
+
+====== HTTP Response
+
+include::subComments/getBySubCommentId/http-response.adoc[]
+
+====== Response Body
+
+include::subComments/getBySubCommentId/response-body.adoc[]
+
+====== Response Fields
+
+include::subComments/getBySubCommentId/response-fields.adoc[]
+
+=== Get Page Of Sub Comments By Comment Id.
+
+Get Page Of Sub Comments By Comment Id.
+
+====== CURL Request
+
+include::subComments/getPageOfSubCommentsByCommentId/curl-request.adoc[]
+
+====== Path Parameters
+
+include::subComments/getPageOfSubCommentsByCommentId/path-parameters.adoc[]
+
+====== HTTP Request
+
+include::subComments/getPageOfSubCommentsByCommentId/http-request.adoc[]
+
+====== HTTPie Request
+
+include::subComments/getPageOfSubCommentsByCommentId/httpie-request.adoc[]
+
+====== Request Body
+
+include::subComments/getPageOfSubCommentsByCommentId/request-body.adoc[]
+
+====== Links
+
+include::subComments/getPageOfSubCommentsByCommentId/links.adoc[]
+
+====== HTTP Response
+
+include::subComments/getPageOfSubCommentsByCommentId/http-response.adoc[]
+
+====== Response Body
+
+include::subComments/getPageOfSubCommentsByCommentId/response-body.adoc[]
+
+====== Response Fields
+
+include::subComments/getPageOfSubCommentsByCommentId/response-fields.adoc[]
+
+=== Get Page Of Sorted Sub Comments By Comment Id.
+
+Get Page Of Sorted Sub Comments By Comment Id.
+
+====== CURL Request
+
+include::subComments/getPageOfSortedSubCommentsByCommentId/curl-request.adoc[]
+
+====== Path Parameters
+
+include::subComments/getPageOfSortedSubCommentsByCommentId/path-parameters.adoc[]
+
+====== HTTP Request
+
+include::subComments/getPageOfSortedSubCommentsByCommentId/http-request.adoc[]
+
+====== HTTPie Request
+
+include::subComments/getPageOfSortedSubCommentsByCommentId/httpie-request.adoc[]
+
+====== Request Body
+
+include::subComments/getPageOfSortedSubCommentsByCommentId/request-body.adoc[]
+
+====== Links
+
+include::subComments/getPageOfSortedSubCommentsByCommentId/links.adoc[]
+
+====== HTTP Response
+
+include::subComments/getPageOfSortedSubCommentsByCommentId/http-response.adoc[]
+
+====== Response Body
+
+include::subComments/getPageOfSortedSubCommentsByCommentId/response-body.adoc[]
+
+====== Response Fields
+
+include::subComments/getPageOfSortedSubCommentsByCommentId/response-fields.adoc[]
+
+=== Create SubComment.
+
+Create SubComment by this body request.
+
+====== CURL Request
+
+include::subComments/add/curl-request.adoc[]
+
+====== Path Parameter
+
+include::subComments/add/path-parameters.adoc
+
+====== HTTP Request
+
+include::subComments/add/http-request.adoc[]
+
+====== HTTPie Requests
+
+include::subComments/add/httpie-request.adoc[]
+
+====== Request Body
+
+include::subComments/add/request-body.adoc[]
+
+====== Request Fields
+
+include::subComments/add/request-fields.adoc[]
+
+====== Links
+
+include::subComments/add/links.adoc[]
+
+====== HTTP Response
+
+include::subComments/add/http-response.adoc[]
+
+====== Response Body
+
+include::subComments/add/response-body.adoc[]
+
+====== Response Fields
+
+include::subComments/add/response-fields.adoc[]
+
+=== Update SubComment.
+
+Update SubComment by subComment id and this body request.
+
+====== CURL Request
+
+include::subComments/update/curl-request.adoc[]
+
+====== Path Parameter
+
+include::subComments/update/path-parameters.adoc[]
+
+====== HTTP Request
+
+include::subComments/update/http-request.adoc[]
+
+====== HTTPie Requests
+
+include::subComments/update/httpie-request.adoc[]
+
+====== Request Body
+
+include::subComments/update/request-body.adoc[]
+
+====== Request Fields
+
+include::subComments/update/request-fields.adoc[]
+
+====== Links
+
+include::subComments/update/links.adoc[]
+
+====== HTTP Response
+
+include::subComments/update/http-response.adoc[]
+
+====== Response Body
+
+include::subComments/update/response-body.adoc[]
+
+====== Response Fields
+
+include::subComments/update/response-fields.adoc[]
+
+=== Delete Sub Comment By Sub Comment Id.
+
+Delete Sub Comment By Sub Comment Id.
+
+====== CURL Request
+
+include::subComments/deleteBySubCommentId/curl-request.adoc[]
+
+====== Path Parameters
+
+include::subComments/deleteBySubCommentId/path-parameters.adoc[]
+
+====== HTTP Request
+
+include::subComments/deleteBySubCommentId/http-request.adoc[]
+
+====== HTTPie Request
+
+include::subComments/deleteBySubCommentId/httpie-request.adoc[]
+
+====== Request Body
+
+include::subComments/deleteBySubCommentId/request-body.adoc[]
+
+====== Links
+
+include::subComments/deleteBySubCommentId/links.adoc[]
+
+====== HTTP Response
+
+include::subComments/deleteBySubCommentId/http-response.adoc[]
+
+====== Response Body
+
+include::subComments/deleteBySubCommentId/response-body.adoc[]
+
+====== Response Fields
+
+include::subComments/deleteBySubCommentId/response-fields.adoc[]
+
+=== Delete All Sub Comments By Comment Id.
+
+Delete All Sub Comments By Comment Id.
+
+====== CURL Request
+
+include::subComments/deleteAllSubCommentsByCommentId/curl-request.adoc[]
+
+====== Path Parameters
+
+include::subComments/deleteAllSubCommentsByCommentId/path-parameters.adoc[]
+
+====== HTTP Request
+
+include::subComments/deleteAllSubCommentsByCommentId/http-request.adoc[]
+
+====== HTTPie Request
+
+include::subComments/deleteAllSubCommentsByCommentId/httpie-request.adoc[]
+
+====== Request Body
+
+include::subComments/deleteAllSubCommentsByCommentId/request-body.adoc[]
+
+====== HTTP Response
+
+include::subComments/deleteAllSubCommentsByCommentId/http-response.adoc[]
+
+====== Response Body
+
+include::subComments/deleteAllSubCommentsByCommentId/response-body.adoc[]
+
+====== Response Fields
+
+include::subComments/deleteAllSubCommentsByCommentId/response-fields.adoc[]
